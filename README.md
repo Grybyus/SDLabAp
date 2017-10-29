@@ -37,7 +37,9 @@ Instalación y Configuración de BD:
   ejecución del script "insertarDatosDefinitivo.sql" a través del comando "psql -h localhost -d distribuidos -U <<USUARIO DE SU BD>> -p 5432 -a -f insertarDatosDefinitivo.sql".
 - Ahora en el directorio SDin y dentro del archivo settings.py, en el apartado DATABASES, se debe modificar los atributos 'USER' y 'PASSWORD' por los creados anteriormente, de tal forma
   que ahora Django a través de estas credenciales pueda conectarse a la base de datos creada.
+  Archivo original:
   ![Archivo setting.py sin modificar](https://user-images.githubusercontent.com/22055735/32140838-ab69ec06-bc4d-11e7-8081-92587d4af3a0.PNG)
+  Modificacion a realizar:
   ![Modificaciones necesarias a settings.py](https://user-images.githubusercontent.com/22055735/32140837-ab4aa03a-bc4d-11e7-90ca-1dbde997c5a7.PNG)
 - Finalmente en la consola, moviendo al directorio principal del proyecto se debe ejecutar el archivo "manage.py", para lo cual se ejecuta el comando "python manage.py runserver", se esta
   manera la aplicación quedara levantada la dirección del localhost en el puerto 8000, "http://127.0.0.1:8000/".
