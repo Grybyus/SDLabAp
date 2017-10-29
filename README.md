@@ -1,5 +1,6 @@
 # SDLabAp
 **OBSERVACIÓN: VER README DESDE EDITOR DE TEXTO / TEXTO NO SE VE DE IGUAL MANERA EN GIT**
+
 Requisitos:
 - Ubuntu(Mate o 14.4)
 - python 2.7
