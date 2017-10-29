@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'SDin',
     'SDapp',
+    'materialize',
 ]
 
 MIDDLEWARE = [
@@ -76,14 +77,16 @@ WSGI_APPLICATION = 'SDin.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'distribuidos',
-        'USER': 'grybyus',
-        'PASSWORD': '4595gd',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
+'default':
+{
+'ENGINE' : 'django.db.backends.postgresql_psycopg2',
+'NAME': 'distribuidos',
+'USER': 'postgres',
+'PASSWORD':'admin123',
+'HOST': 'localhost',
+'PORT' : ''
+
+}
 }
 
 
