@@ -9,6 +9,7 @@ Requisitos:
 - psycopg2 2.7.1
 
 (asumimos instalado Python, pip y Virtualenv)
+
 Pasos de Instalación:
 - Iniciar un entorno virtual nuevo con Python 2.7 y su pip respectivo
 - Instalar django: sudo pip install Django==1.11.2
