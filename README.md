@@ -18,20 +18,19 @@ Pasos de Instalación:
 - Instalar materialize: sudo pip install django-materialize-css
 - Redirijase a la carpeta Data del proyecto
 - Cree un nuevo usuario en Postgresql
-psql -U postgres -h localhost -W
-CREATE USER <<Ingrese nombre de usuario aquí>> PASSWORD '<<Ingrese su pass>>';
-ALTER ROLE <<Ingrese nombre de usuario>> WITH SUPERUSER;
+>psql -U postgres -h localhost -W
+>CREATE USER <<Ingrese nombre de usuario aquí>> PASSWORD '<<Ingrese su pass>>';
+>ALTER ROLE <<Ingrese nombre de usuario>> WITH SUPERUSER;
 - Cree una nueva Base de datos en Postgresql llamada "distribuidos"
-CREATE DATABASE distribuidos WITH OWNER <<Ingrese nombre de usuario>>;
-GRANT ALL PRIVILEGES ON DATABASE distribuidos TO <<Ingrese nombre de usuario>>;
-Ctrl + Z
+>CREATE DATABASE distribuidos WITH OWNER <<Ingrese nombre de usuario>>;
+>GRANT ALL PRIVILEGES ON DATABASE distribuidos TO <<Ingrese nombre de usuario>>;
+>Ctrl + Z
 - Ejecute los siguientes comandos:
-psql -h localhost -d distribuidos -U <<USUARIO DE SU BD>> -p 5432 -a -f crearTablas.sql
-psql -h localhost -d distribuidos -U <<USUARIO DE SU BD>> -p 5432 -a -f insertarDatosDefinitivo.sql
-- muevase hasta la carpeta SDin y modifique el archivo settings.py en las llaves de DATABASES
-  Cambie el usuario, y la password con las suyas.
+>psql -h localhost -d distribuidos -U <<USUARIO DE SU BD>> -p 5432 -a -f crearTablas.sql
+>psql -h localhost -d distribuidos -U <<USUARIO DE SU BD>> -p 5432 -a -f insertarDatosDefinitivo.sql
+- muevase hasta la carpeta SDin y modifique el archivo settings.py en las llaves de DATABASES, Cambie el usuario, y la password con las suyas.
 - muevase a la carpeta inicial del proyecto (donde esta el archivo manage.py) y ejecute
-python manage.py runserver
+>python manage.py runserver
 - finalmente abra el link que aparece en la consola en su navegador preferido.
 
 Detalles:
