@@ -2,7 +2,7 @@
 **OBSERVACIÓN: VER README DESDE EDITOR DE TEXTO / TEXTO NO SE VE DE IGUAL MANERA EN GIT**
 
 Requisitos:
-- Ubuntu(Mate o 14.4)
+- Ubuntu(Mate o 17.10)
 - python 2.7
 - virtualenv 15.1.0
 - Django 1.11.2
