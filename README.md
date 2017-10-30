@@ -46,6 +46,5 @@ Instalación y Configuración de BD:
 
 Detalles:
 * Se utilizo el LOCALHOST para la BD
-* La aplicación desde el Frontend donde se realiza la consulta, y se envía al Backend el cual termina por consultar a la Base de datos
-comunicándose por el conector psycopg2 y así entregar este resultado hasta el Frontend
-
+* La aplicación desde el Frontend donde se realiza la consulta, y se envía al Backend el cual termina por consultar a la Base de datos comunicándose por el conector psycopg2 y así entregar este resultado hasta el Frontend
+* La separación entre Frontend y Backend no se puede percibir tan claramente debido a cómo trabaja Django como Framework, pero idealmente se separaría usando 2 aplicaciones de Django una con el FrontEnd y otra con el Backend, el Frontend realizaría consultas utilizando el middleware de csrf al Backend, por lo que aumentaría considerablemente la seguridad entre el servidor Frontend y Backend al mismo tiempo que previene ataques de host autónomos que intenten realizar consultas.
